@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css');
+:root{
+    --primary-blue:#1A73E8;
+    --color-text-black:#212121;
+    --secondary-grey:#5F6369;
+    --light-grey:#FAFAFA;
+    --dark-grey:#5F6368;
+    --light-grey-header:#757575;
+    --border-grey:#D8D8D8;
+    --divider-grey:#E9EBED;
+    --white:#FFFFFF;
+}
+
+/* Button styles */
+button{
+    font-family: 'Roboto' sans-serif;
+    font:medium;
+    font-size: 14px;
+    padding: 8px;
+}
+
+button.filled{
+    letter-spacing: 0.5px;
+    color:var(--white);
+    height: 36px;
+    border-radius: 4px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background: var(--primary-blue);
+    border-color: transparent;
+}
+
+    button.filled.rounded{
+        border-radius: 18px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+button.outlined{
+    height: 36px;
+    letter-spacing: 0.2px;
+    color:var(var(--secondary-grey));
+    border:1px solid var(--border-grey);
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 4px;
+    background:var(--white);
+    color: var(--secondary-grey);
+}
+
+    button.outlined.rounded{
+        border-width: 1px;
+        border-color: var(--border-grey);
+        border-radius: 16px;
+    }
+
+button.text-only{
+    letter-spacing: 0.23px;
+    color:var(--primary-blue);
+    min-height: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border:none;
+    background: var(--white);
+}
+
+button.filled  > .icon{
+    width: 18px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+button.outlined > .icon{
+    width: 18px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+
+/* Cards */
+.card{
+    background:var(--white);
+    border:1px solid #DADCE0;
+    border-radius: 8px;
+    padding:1.5px;
+}
+
+/* Navigation Header */
+
+.nav-header{
+    display: flex;
+    align-items: center;
+    height: 56px;
+    width: 100%;
+    background: var(--white);
+    border-bottom: 1mm solid #E9EBED;
+    margin-bottom: -1mm;
+}
+
+    .navbar-icon{
+        color: var(--secondary-grey);
+        font-size: 20px;
+    }
+    .nav-search{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
