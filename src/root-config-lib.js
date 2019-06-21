@@ -5,9 +5,7 @@ const coreApplications = {
   "@openmrs/devtools": () => localStorage.getItem("openmrs:devtools"),
   "@hackathon/navbar": location => !loginActive(location),
   "@hackathon/patient-dashboard": location =>
-    location.pathname.startsWith("/openmrs/spa/patient-dashboard"),
-  "@hackathon/patient-search": location =>
-    location.pathname.startsWith("/openmrs/spa/patient-search")
+    location.pathname.startsWith("/openmrs/spa/patient-dashboard")
 };
 
 function loginActive(location) {
